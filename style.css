@@ -1,0 +1,598 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100vw;
+  font-family: Helvetica;
+  background-image: url('images/marble.jpg'); /* Specify the correct relative path to your image */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+}
+
+
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #00000027;
+  padding: 10px 0;
+}
+.navbar-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+.navbar-list li {   
+  display: inline;
+  margin-right: 20px;
+
+}
+
+
+.lng-main:hover {
+  background-color: #02020275;
+}
+.lng-main {       /*acribis*/
+  display: inline-block;
+  margin-left: 40px;
+  padding: 0px 0px;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  background-color: hsla(0, 0%, 100%, 0);
+  border: none;
+  border-radius: 1px;
+  cursor: pointer;
+  font-size: 18px;
+}
+.lng-main:hover {
+  background-color: #02020275;
+}
+input, select, textarea {
+  background: none;
+  border: 1px solid rgba(255, 255, 255, 0);
+  padding: 10px 20px;
+  font-size: .9rem;
+  outline: none;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+  color: blue;
+}
+
+/* Style the button to look like a link */
+button {
+  background: none;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  color: rgb(171, 171, 182);
+}
+
+.intro{
+  height: 100vh;
+}
+
+.intro video {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+
+.intro h1 {
+  position: absolute;
+  left: 10%;
+  top: 30%;
+  font-size: 60px;
+  color: rgb(255, 255, 255);
+  z-index: 10;
+}
+
+.lng-fbi {
+  position: absolute;
+  top: 83%;
+  left: 70%;
+  padding: 10px 20px;
+  font-size: 35px;
+  background-color: transparent;
+  border: 2px solid #fafafa;
+  color: #fafafa;
+  cursor: pointer;
+}
+.lng-fbi:hover {
+  background-color: #fafafa17;
+  z-index: 1000;
+  outline: none;
+}
+
+
+
+.catalog {
+  height: 90vh;
+}
+
+.catalog img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+
+  transform-origin: top left;
+}
+
+
+.lng-sbi {
+  position: absolute;
+  top: 230%;
+  left: 70%;
+  padding: 10px 20px;
+  font-size: 40px;
+  background-color: transparent;
+  border: 1px solid #fffdfd;
+  color: #fafafa;
+  cursor: pointer;
+}
+
+.lng-sbi:hover {
+  background-color: #fafafa17;
+  z-index: 1000;
+  outline: none;
+}
+
+.lng-tbi {
+  position: absolute;
+  top: 320%;
+  left: 70%;
+  padding: 10px 20px;
+  font-size: 40px;
+  background-color: transparent;
+  border: 1px solid #fffdfd;
+  color: #fafafa;
+  cursor: pointer;
+}
+
+.lng-tbi:hover {
+  background-color: #fafafa17;
+  z-index: 1000;
+  outline: none;
+}
+@media (max-width: 1040px) {       /*vertical*/
+   .lng-fbi {
+    position: absolute;
+    top: 165%;
+    left: 35%;
+    padding: 20px 40px;
+    font-size: 50px;
+    background-color: transparent;
+    border: 2px solid #fafafa;
+    color: #fafafa;
+    cursor: pointer;
+
+  }
+ .lng-sbi {
+  position: absolute;
+  top: 175%;
+  left: 35%;
+  padding: 20px 40px;
+  font-size: 50px;
+  background-color: transparent;
+  border: 2px solid #fafafa;
+  color: #fafafa;
+  cursor: pointer;
+  }
+  .lng-tbi {
+    position: absolute;
+    top: 175%;
+    left: 35%;
+    padding: 20px 40px;
+    font-size: 50px;
+    background-color: transparent;
+    border: 2px solid #fafafa;
+    color: #fafafa;
+    cursor: pointer;
+  }
+ 
+  }
+  .imgpc {
+      display: none;
+    }
+  .intro {
+    transform: scale(1);
+    transform-origin: top left;
+    height: 100vh;
+  }
+
+
+  .catalog {
+    height: 93vh;
+    transform: scale(1);
+  transform-origin: top left;
+  }
+  
+  .catalog img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transform: scale(1);
+  transform-origin: top left;
+  }
+
+  
+
+  .intro h1 {
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    transform: translate(-30%, 30%);
+    font-size: 35px;
+    color: rgb(255, 255, 255);
+  }
+
+  
+ 
+
+@media (max-height: 500px) {        /*horizontal*/
+
+  .intro h1 {
+    position: absolute;
+    top: 40%;
+    left: 60%;
+    transform: translate(-30%, 30%);
+    font-size: 70px;
+    color: rgb(46, 46, 46);
+  }
+
+  .catalog {
+    height: 85vh;
+    transform: scale(1);
+  transform-origin: top left;
+  }
+  
+  .catalog img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transform: scale(1);
+  transform-origin: top left;
+  }
+  .lng-fbi {
+    position: absolute;
+    top: 165%;
+    left: 15%;
+    padding: 20px 40px;
+    font-size: 50px;
+    background-color: transparent;
+    border: 2px solid #121212b0;
+    color: #212121;
+    cursor: pointer;
+  }
+  .lng-tbi {
+    position: absolute;
+    top: 165%;
+    left: 15%;
+    padding: 20px 40px;
+    font-size: 50px;
+    background-color: transparent;
+    border: 2px solid #121212b0;
+    color: #212121;
+    cursor: pointer;
+  }
+  .lng-sbi {
+    position: absolute;
+    top: 165%;
+    left: 15%;
+    padding: 20px 40px;
+    font-size: 50px;
+    background-color: transparent;
+    border: 2px solid #121212b0;
+    color: #212121;
+    cursor: pointer;
+  }
+}
+
+/**************************************************************************************/
+section {
+  height: auto;
+}
+
+.buttons {
+  margin-top: 30px;
+    margin-left: 80px;
+}
+
+.lng-showEvenButton, .lng-showOddButton, .lng-showAllButton{
+   
+    margin-top: 30px;
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: transparent;
+    border: 2px solid #212121;
+    color: #212121;
+    cursor: pointer;
+  
+  }
+  .lng-showEvenButton:hover, .lng-showOddButton:hover, .lng-showAllButton:hover {
+    background-color: #ffffff00;
+    z-index: 1000;
+    outline: none;
+  }
+
+      
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+/* Style for the product grid */
+.product-grid {
+  padding: 80px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Four columns per row */
+  gap: 27px; /* Adjust the gap between items */
+}
+
+@media (max-width: 500px) {
+  .product-grid {
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Four columns per row */
+    gap: 20px; /* Adjust the gap between items */
+  }
+  .buttons {
+  margin-left: 10px;
+  margin-top: 5px;
+  }
+  .lng-showEvenButton, .lng-showOddButton, .lng-howAllButton{
+   
+    margin-top: 30px;
+    padding: 10px 13px;
+    font-size: 18px;
+    background-color: transparent;
+    border: 2px solid #212121;
+    color: #212121;
+    cursor: pointer;
+  
+  }
+}
+
+
+
+
+.product-item {
+  align-items: center;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  border: 0.70px solid #000000;
+}
+
+.product-image {
+  max-width: 100%;
+}
+
+
+
+
+.lng-product-button, .product-title{
+  margin-top: 10px;
+  display: inline;
+ 
+}
+
+.product-title{
+ font-size: 20px;
+ margin-bottom: 10px;
+}
+
+.lng-product-button {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-size: 20px;
+  background-color: rgb(0, 89, 255);
+  color:#ffffff;
+  border-radius: 50px;
+  padding: 1px 20px; 
+}
+
+
+.container {
+  display: top;
+  align-items: center;
+  justify-content: center;
+}
+
+aa {
+  font-size: 40px;
+  color: rgba(46, 46, 46, 0);
+}
+
+aaa {
+  font-size: 40px;
+  color: rgba(46, 46, 46, 0);
+}
+aaaa {
+  font-size: 10px;
+  color: rgba(46, 46, 46, 0);
+}
+
+
+
+
+
+
+/******************WATCH**********************************/
+.hand {
+    width: 2px;
+    height: 26px;
+    background-color: #000;
+    position: absolute;
+    top: 12.5%;
+    left: 50%;
+    transform-origin: bottom;
+    
+}
+
+.watch {
+  width: 75px;
+  height: 75px;
+  background-color: #f3f9ff;
+  border: 0.5px solid #000;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  transform-origin: center center;
+  transform: rotate(0deg);
+  transition: transform 0.1s ease;
+}
+
+.number {
+  position: absolute;
+  font-size: 10px;
+  font-weight: bold;
+}
+
+.twelve {
+  top: 5px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: rgb(57, 51, 57);
+}
+
+
+
+.GUARDO {
+  font-size: 8px;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: rgb(57, 51, 57);
+}
+
+.three {
+  top: 50%;
+  right: 5px;
+  transform: translateY(-50%);
+  color: rgb(57, 51, 57);
+}
+
+.six {
+  bottom: 5px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: rgb(57, 51, 57);
+}
+
+.nine {
+  top: 50%;
+  left: 5px;
+  transform: translateY(-50%);
+  color: rgb(57, 51, 57);
+}
+
+
+/**************************************************************firstsection********************************************************************/
+
+.carusel {
+  display: grid;
+  grid-template-areas: 
+  "left-panel right-panel";
+    grid-template-columns:  1fr 11fr ;
+    margin-left: 18%;
+
+}
+
+.carusel img {
+  display: block;
+  max-width: 100%;
+  max-height: 700px;
+  margin: 20px 10%;
+}
+
+.left-panel {
+  grid-area: left-panel;
+  padding-left: 0%;
+}
+
+.right-panel {
+  grid-area: right-panel;
+}
+
+@media (max-width: 1040px) {
+  .carusel {
+    display: grid;
+    grid-template-areas: 
+    "left-panel right-panel";
+      grid-template-columns:  1fr 11fr ;
+      margin-left: 1%;
+  
+  }
+  
+  .carusel img {
+    display: block;
+    max-width: 100%;
+    max-height: 700px;
+    margin: 20px 0%;
+  }
+  
+  .left-panel {
+    grid-area: left-panel;
+    padding-left: 0%;
+  }
+}
+
+/******************BASEMENT**********************************/
+
+.basement {
+  height: 25vh;
+  background-color: #252525;
+  margin-top: 20px;
+}
+.fotter-text {
+ font-size: 50px;
+ color: white;
+ margin-left: 30%;
+ margin-top: 10px;
+}
+
+li {
+  list-style-type: none; /* Removes bullet points */
+}
+
+.lng-about, .lng-privacy, .lng-conditions, .lng-delivery {
+  padding-top: 50px;
+  color: #ffffff;
+  font-size: 20px;
+  margin-left: 5px;
+  padding: 10px 10px;
+}
+
+@media (min-width: 500px) {
+  .fotter-text {
+    font-size: 50px;
+    color: white;
+    margin-left: 45%;
+    margin-top: 10px;
+   }
+   .lng-about, .lng-privacy, .lng-conditions, .lng-delivery {
+    padding-top: 50px;
+    color: #ffffff;
+    font-size: 20px;
+    margin-left: 130px;
+    padding: 10px 10px;
+  }
+}
