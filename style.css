@@ -98,7 +98,16 @@ button {
   left: 0;
   object-fit: cover;
 }
-
+#bgVideo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -1; /* Place it behind other content */
+}
 
 .intro h1 {
   position: absolute;
