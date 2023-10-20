@@ -1,0 +1,481 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100vw;
+  font-family: Helvetica;
+  background-color: #252525;
+
+}
+
+
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #00000027;
+  padding: 10px 0;
+}
+.navbar-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+.navbar-list li {   
+  display: inline;
+  margin-right: 20px;
+
+}
+
+
+.lng-main:hover {
+  background-color: #02020275;
+}
+.lng-main {       /*acribis*/
+  display: inline-block;
+  margin-left: 40px;
+  padding: 0px 0px;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  background-color: hsla(0, 0%, 100%, 0);
+  border: none;
+  border-radius: 1px;
+  cursor: pointer;
+  font-size: 18px;
+}
+.lng-main:hover {
+  background-color: #02020275;
+}
+input, select, textarea {
+  background: none;
+  border: 1px solid rgba(255, 255, 255, 0);
+  padding: 10px 20px;
+  font-size: .9rem;
+  outline: none;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+  color: blue;
+}
+
+
+
+.intro {
+  position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100vh; 
+}
+
+
+
+
+
+
+.main  {
+  position: absolute;
+  left: 10%;
+  top: 30%;
+  font-size: 60px;
+  color: rgb(255, 255, 255);
+  z-index: 10;
+}
+
+.lng-fbi {
+  position: relative;
+  top: 84vh;
+  right: -70%; /* This ensures a 5% spacing from the right edge */
+  padding: 10px 20px;
+  font-size: 40px;
+  background-color: transparent;
+  border: 1px solid #fffdfd;
+  color: #fafafa;
+  cursor: pointer;
+  z-index: 10;
+}
+
+
+.scroll-container {
+    position: fixed;
+    top: -20%;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    overflow: visible;
+}
+
+.rectangle {
+  width: 45vw;
+  height: 180vh;
+  /*background-color: #4b7bb145;*/
+  background-color: rgba(90, 70, 100, 0.313);
+  margin: 0px -35vh; /* Adjust the margin if needed */
+  transform: rotate(-20deg); /* Rotate each rectangle by -20 degrees */
+  transition: transform 0.5s ease-in-out;
+}
+
+
+
+.right {
+    margin-left: 100px;
+}
+
+.center {
+    margin-left: 0;
+}
+
+.left {
+    margin-left: -100px;
+}
+
+.content {
+  margin-left: 330px;
+  padding: 20px;
+  position: relative; /* Add this line */
+  z-index: 1; /* Add this line to place it above the scroll-container */
+  height: 100vh; /* Set the height to 100vh */
+  overflow-y: scroll; /* Add scrolling to the content */
+}
+
+
+
+
+
+
+/**************************************************************************************/
+
+
+aa {
+  font-size: 25px;
+  color: rgba(46, 46, 46, 0);
+}
+
+aaa {
+  font-size: 40px;
+  color: rgba(46, 46, 46, 0);
+}
+aaaa {
+  font-size: 10px;
+  color: rgba(46, 46, 46, 0);
+}
+
+
+
+
+
+
+/******************WATCH**********************************/
+.hand {
+    width: 2px;
+    height: 26px;
+    background-color: #000;
+    position: absolute;
+    top: 12.5%;
+    left: 50%;
+    transform-origin: bottom;
+    
+}
+
+.watch {
+  width: 75px;
+  height: 75px;
+  background-color: #f3f9ff;
+  border: 0.5px solid #000;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  transform-origin: center center;
+  transform: rotate(0deg);
+  transition: transform 0.1s ease;
+}
+
+.number {
+  position: absolute;
+  font-size: 10px;
+  font-weight: bold;
+}
+
+.twelve {
+  top: 5px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: rgb(57, 51, 57);
+}
+
+
+
+.GUARDO {
+  font-size: 8px;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: rgb(57, 51, 57);
+}
+
+.three {
+  top: 50%;
+  right: 5px;
+  transform: translateY(-50%);
+  color: rgb(57, 51, 57);
+}
+
+.six {
+  bottom: 5px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: rgb(57, 51, 57);
+}
+
+.nine {
+  top: 50%;
+  left: 5px;
+  transform: translateY(-50%);
+  color: rgb(57, 51, 57);
+}
+
+
+.unit1 {
+  position: absolute;
+  left: 10%;
+  top: 35%;
+  font-size: 60px;
+  color: rgb(255, 255, 255);
+  z-index: 1;
+}
+
+.unit2 {
+position: absolute;
+left: 10%;
+top: 30%;
+font-size: 60px;
+color: rgb(255, 255, 255);
+z-index: 1;
+}
+
+.unit3 {
+position: absolute;
+left: 65%;
+top: 35%;
+font-size: 23px;
+color: rgb(255, 255, 255);
+z-index: 1;
+}
+
+
+
+.intro { 
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  display: flex;
+}
+.intro video{
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  display: flex;
+  z-index: -1;
+}
+.rectangl {
+  width: 150vw;
+  height: 150vh;
+  background-color: rgba(0, 0, 0, 0.752);
+}
+
+.fblock {
+  top: 100vh;
+ height: 140vh;
+  width: 100%;
+  background-color: ghostwhite;
+  position: relative;
+  text-align: center;
+}
+
+.fblock img{
+  height: 80vh;
+  width: auto;
+  position: absolute;
+  top: 50%; /* Move the top of the image down to the center */
+  left: 50%; /* Move the left edge of the image to the center */
+  transform: translate(-50%, -50%);
+}
+
+.green, .blue, .red {
+  z-index: 10;
+  color: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  transform: translate(0, 100vh); /* Move them 30px down */
+  line-height: 100px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  margin: 10px;
+  border: 1px solid #000; /* Add a thin black border to all circle buttons */
+  display: inline-block; /* Display elements as inline-block to align them horizontally */
+  vertical-align: middle
+}
+
+
+
+.fblockpco, .fblockpct, .fblockpctr {
+height: 100%;
+width: 100vw;
+display: none;
+
+}
+
+
+.tblock {
+  width: 100vw;
+  height: 100vh;
+  justify-content: space-between; 
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two equal-width columns */
+  gap: 0px; 
+  transform: translate(0%, -180%);
+}
+
+.imageo, .imaget, .imagetr, .timageo, .timaget, .timagetr {
+  width: 50vw;
+  height: 100%;
+ display: none;
+}
+
+.sblock {
+  top: 100vh;
+  height: 140vh;
+   width: 100%;
+   background-color: ghostwhite;
+   position: relative;
+   text-align: center;
+   transform: translate(0%, 0%);
+   display: flex;
+}
+
+
+.sblock img{
+  height: 80vh;
+  width: 100vw;
+  position: absolute;
+  top: 50%; /* Move the top of the image down to the center */
+  left: 50%; /* Move the left edge of the image to the center */
+  transform: translate(-50%, -75%);
+}
+.sblocko, .sblockt, .sblocktr {
+  height: 100%;
+  display: none;
+  }
+  
+  @media (max-width: 1040px) {       /*vertical*/
+  .fblock img{
+    height: 80vh;
+    width: 90vw;
+    position: absolute;
+    top: 50%; /* Move the top of the image down to the center */
+    left: 50%; /* Move the left edge of the image to the center */
+    transform: translate(-50%, -50%);
+  }
+  .sblock {
+    top: 100vh;
+    height: 140vh;
+     width: 100%;
+     background-color: ghostwhite;
+     position: relative;
+     text-align: center;
+     transform: translate(0%, -5%);
+     display: flex;
+  }
+  .sblock img{
+    height: 80vh;
+    width: 90vw;
+    position: absolute;
+    top: 50%; /* Move the top of the image down to the center */
+    left: 50%; /* Move the left edge of the image to the center */
+    transform: translate(-50%, -65%);
+  }
+
+  .tblock {
+    width: 90vw;
+    height: 100vh;
+    justify-content: space-between; 
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); /* Two equal-width columns */
+    gap: 0px; 
+    transform: translate(5.5%, -180%);
+  }
+
+  .imageo, .imaget, .imagetr, .timageo, .timaget, .timagetr {
+    width: 90vw;
+    height: 100%;
+   display: none;
+  }
+}
+
+/******************BASEMENT**********************************/
+
+
+.basement {
+  top: 100vh;
+  height: 25vh;
+  background-color: #252525;
+  margin-top: 20px;
+  transform: translate(0%, -0%);
+}
+.fotter-text {
+ font-size: 50px;
+ color: white;
+ margin-left: 30%;
+ margin-top: 10px;
+}
+
+li {
+  list-style-type: none; /* Removes bullet points */
+}
+
+.lng-about, .lng-privacy, .lng-conditions, .lng-delivery {
+  padding-top: 50px;
+  color: #ffffff;
+  font-size: 20px;
+  margin-left: 5px;
+  padding: 10px 10px;
+}
+
+@media (min-width: 500px) {
+  .fotter-text {
+    font-size: 50px;
+    color: white;
+    margin-left: 45%;
+    margin-top: 10px;
+   }
+   .lng-about, .lng-privacy, .lng-conditions, .lng-delivery {
+    padding-top: 50px;
+    color: #ffffff;
+    font-size: 20px;
+    margin-left: 130px;
+    padding: 10px 10px;
+  }
+}
