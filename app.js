@@ -84,18 +84,7 @@ let scene2 = new ScrollMagic.Scene({
   .addTo(controller);
 
 
-let scrollpos = 0;
-let delay = 0;
 
-scene.on("update", e => {
-  scrollpos = e.scrollPos / 200;
-});
-
-setInterval(() => {
-  delay += (scrollpos - delay) * 0.1;
-
-  video.currentTime = delay;
-}, 33.3);
 
 
 
