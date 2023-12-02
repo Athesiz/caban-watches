@@ -19,7 +19,7 @@ const pinNavbarScene = new ScrollMagic.Scene({
   const scrollContainer = document.querySelector('.scroll-container');
   const controller = new ScrollMagic.Controller();
   
-  var screenHeight = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
+  var screenHeight = document.documentElement.clientHeight;
 
   var newVerticalTranslation = -588*8.28 +(828 - screenHeight);
   document.querySelector('.catalog2 img').style.transform = 'translate(0%, ' + newVerticalTranslation + 'px)';
