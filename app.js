@@ -21,25 +21,25 @@ const pinNavbarScene = new ScrollMagic.Scene({
   
   var screenHeight = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
 
-  var newVerticalTranslation = -594*8.28 +(828 - document.documentElement.clientHeight);
+  var newVerticalTranslation = -((588*8.28)+document.documentElement.clientHeight*0.1) +(828 - document.documentElement.clientHeight);
   document.querySelector('.catalog2 img').style.transform = 'translate(0%, ' + newVerticalTranslation + 'px)';
   
   var newVerticalTranslation1 = 15*8.28 +(828 - document.documentElement.clientHeight);
   document.querySelector('.lng-sbi').style.transform = 'translate(0%, ' + newVerticalTranslation1 + 'px)';
   
-  var newVerticalTranslation2 = -1059*8.28 +(2 * (828 - document.documentElement.clientHeight));
+  var newVerticalTranslation2 = -((1054*8.28)+document.documentElement.clientHeight*0.2) +(2 * (828 - document.documentElement.clientHeight));
   document.querySelector('.catalog3 img').style.transform = 'translate(0%, ' + newVerticalTranslation2 + 'px)';
   
   var newVerticalTranslation3 = -575*8.28 +(828 - document.documentElement.clientHeight);
   document.querySelector('.lng-tbi').style.transform = 'translate(0%, ' + newVerticalTranslation3 + 'px)';
   
-  var newVerticalTranslation4 = -1404*8.28 +(3 * (828 - document.documentElement.clientHeight));
+  var newVerticalTranslation4 = -((1398*8.28)+document.documentElement.clientHeight*0.3) +(3 * (828 - document.documentElement.clientHeight));
   document.querySelector('.catalog4 img').style.transform = 'translate(0%, ' + newVerticalTranslation4 + 'px)';
   
   var newVerticalTranslation5 = -1042*8.28 +(828 - document.documentElement.clientHeight);
   document.querySelector('.lng-4bi').style.transform = 'translate(0%, ' + newVerticalTranslation5 + 'px)';
   
-  var newVerticalTranslation6 = -1626*8.28 +(4 * (828 - document.documentElement.clientHeight));
+  var newVerticalTranslation6 = -((1620*8.28)+document.documentElement.clientHeight*0.4) +(4 * (828 - document.documentElement.clientHeight));
   document.querySelector('.catalog5 img').style.transform = 'translate(0%, ' + newVerticalTranslation6 + 'px)';
   
   var newVerticalTranslation7 = -1380*8.28 +(5 * (828 - document.documentElement.clientHeight));
