@@ -361,6 +361,41 @@ button {
     color: rgb(255, 255, 255);
   }
 
+  .catalog1 img {
+    height: 110%;
+    width: 100%;
+    object-fit: cover;
+    transform-origin: top left;
+    z-index: +0;
+  }
+  .catalog2 img {
+    height: 110%;
+    width: 100%;
+    object-fit: cover;
+    transform-origin: top left;
+    z-index: +1;
+  }
+  .catalog3 img {
+    height: 110%;
+    width: 100%;
+    object-fit: cover;
+    transform-origin: top left;
+    z-index: +2;
+  }
+  .catalog4 img {
+    height: 110%;
+    width: 100%;
+    object-fit: cover;
+    transform-origin: top left;
+    z-index: +3;
+  }
+  .catalog5 img {
+    height: 110%;
+    width: 100%;
+    object-fit: cover;
+    transform-origin: top left;
+    z-index: +4;
+  }
 
   .lng-fbi {
     position: relative;
@@ -443,20 +478,9 @@ button {
     font-size: 70px;
     color: rgb(46, 46, 46);
   }
-
-  .catalog1 {
-    height: 85vh;
-    transform: scale(1);
-  transform-origin: top left;
-  }
   
-  .catalog1 img {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    transform: scale(1);
-  transform-origin: top left;
-  }
+ 
+
   .lng-fbi {
     position: absolute;
     top: 165%;
