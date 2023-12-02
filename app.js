@@ -20,7 +20,8 @@ const pinNavbarScene = new ScrollMagic.Scene({
   const controller = new ScrollMagic.Controller();
   
   var screenHeight = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
-
+  document.addEventListener('DOMContentLoaded', function () {
+  if (window.innerheight > 828) {
   var newVerticalTranslation = -((588*8.28)+document.documentElement.clientHeight*0.1) +(828 - document.documentElement.clientHeight);
   document.querySelector('.catalog2 img').style.transform = 'translate(0%, ' + newVerticalTranslation + 'px)';
   
@@ -50,7 +51,38 @@ const pinNavbarScene = new ScrollMagic.Scene({
   
   var newVerticalTranslation9 = -1130*8.28 +(1 * (828 - document.documentElement.clientHeight));
   document.querySelector('.grid').style.transform = 'translate(0%, ' + newVerticalTranslation9 + 'px)';
-  
+  }
+  else {
+    var newVerticalTranslation = -((588*8.28)-document.documentElement.clientHeight*0.001) +(828 - document.documentElement.clientHeight);
+    document.querySelector('.catalog2 img').style.transform = 'translate(0%, ' + newVerticalTranslation + 'px)';
+    
+    var newVerticalTranslation1 = 15*8.28 +(828 - document.documentElement.clientHeight);
+    document.querySelector('.lng-sbi').style.transform = 'translate(0%, ' + newVerticalTranslation1 + 'px)';
+    
+    var newVerticalTranslation2 = -((1054*8.28)-document.documentElement.clientHeight*0.001) +(2 * (828 - document.documentElement.clientHeight));
+    document.querySelector('.catalog3 img').style.transform = 'translate(0%, ' + newVerticalTranslation2 + 'px)';
+    
+    var newVerticalTranslation3 = -575*8.28 +(828 - document.documentElement.clientHeight);
+    document.querySelector('.lng-tbi').style.transform = 'translate(0%, ' + newVerticalTranslation3 + 'px)';
+    
+    var newVerticalTranslation4 = -((1398*8.28)-document.documentElement.clientHeight*0.001) +(3 * (828 - document.documentElement.clientHeight));
+    document.querySelector('.catalog4 img').style.transform = 'translate(0%, ' + newVerticalTranslation4 + 'px)';
+    
+    var newVerticalTranslation5 = -1042*8.28 +(828 - document.documentElement.clientHeight);
+    document.querySelector('.lng-4bi').style.transform = 'translate(0%, ' + newVerticalTranslation5 + 'px)';
+    
+    var newVerticalTranslation6 = -((1620*8.28)-document.documentElement.clientHeight*0.001) +(4 * (828 - document.documentElement.clientHeight));
+    document.querySelector('.catalog5 img').style.transform = 'translate(0%, ' + newVerticalTranslation6 + 'px)';
+    
+    var newVerticalTranslation7 = -1380*8.28 +(5 * (828 - document.documentElement.clientHeight));
+    document.querySelector('.lng-5bi').style.transform = 'translate(0%, ' + newVerticalTranslation7 + 'px)';
+    
+    var newVerticalTranslation8 = -1605*8.28 +(6 * (828 - document.documentElement.clientHeight));
+    document.querySelector('.lng-6bi').style.transform = 'translate(0%, ' + newVerticalTranslation8 + 'px)';
+    
+    var newVerticalTranslation9 = -1130*8.28 +(1 * (828 - document.documentElement.clientHeight));
+    document.querySelector('.grid').style.transform = 'translate(0%, ' + newVerticalTranslation9 + 'px)';
+  }});
   
   const catalog1 = document.querySelector(".catalog1");
   let fi = new ScrollMagic.Scene({
