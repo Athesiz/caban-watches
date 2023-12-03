@@ -70,20 +70,20 @@ window.addEventListener('scroll', function () {
   document.querySelector('.grid').style.transform = 'translate(0%, ' + newVerticalTranslation8 + 'px)';
   } 
   else {
-  var newVerticalTranslation = -((realHeight * 5) + addressBarHeight * 1);
+  var newVerticalTranslation = -((realHeight * 5) + addressBarHeight * 5);
   document.querySelector('.catalog2 img').style.transform = 'translate(0%, ' + newVerticalTranslation + 'px)';
   document.querySelector('.lng-tbi').style.transform = 'translate(0%, ' + newVerticalTranslation + 'px)';
 
-  var newVerticalTranslation2 = -((realHeight * 9) + addressBarHeight * 2);
+  var newVerticalTranslation2 = -((realHeight * 9) + addressBarHeight * 5);
   document.querySelector('.catalog3 img').style.transform = 'translate(0%, ' + newVerticalTranslation2 + 'px)';
   document.querySelector('.lng-4bi').style.transform = 'translate(0%, ' + newVerticalTranslation2 + 'px)';
   
   
-  var newVerticalTranslation4 = -((realHeight * 12) + addressBarHeight * 3);
+  var newVerticalTranslation4 = -((realHeight * 12) + addressBarHeight * 7);
   document.querySelector('.catalog4 img').style.transform = 'translate(0%, ' + newVerticalTranslation4 + 'px)';
   document.querySelector('.lng-5bi').style.transform = 'translate(0%, ' + newVerticalTranslation4 + 'px)';
 
-  var newVerticalTranslation6 = -((realHeight * 14) + addressBarHeight * 4);
+  var newVerticalTranslation6 = -((realHeight * 14) + addressBarHeight * 8);
   document.querySelector('.catalog5 img').style.transform = 'translate(0%, ' + newVerticalTranslation6 + 'px)';
   document.querySelector('.lng-6bi').style.transform = 'translate(0%, ' + newVerticalTranslation6 + 'px)';
   
