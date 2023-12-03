@@ -23,15 +23,15 @@ const pinNavbarScene = new ScrollMagic.Scene({
 var addressBarHeight = browserHeight - window.innerHeight;
 var realHeight = window.innerHeight - addressBarHeight;
   
-  var newVerticalTranslation = - (600 * 8.28) + ( (828 - realHeight));
+  var newVerticalTranslation = - (602 * 8.28) + ( (828 - realHeight));
   document.querySelector('.catalog2 img').style.transform = 'translate(0%, ' + newVerticalTranslation + 'px)';
   
 
-  var newVerticalTranslation2 = - (1065 * 8.28) + ( (828 - realHeight));
+  var newVerticalTranslation2 = - (1068 * 8.28) + ( (828 - realHeight));
   document.querySelector('.catalog3 img').style.transform = 'translate(0%, ' + newVerticalTranslation2 + 'px)';
   
   
-  var newVerticalTranslation4 = - (1410 * 8.28) + ( (828 - realHeight));
+  var newVerticalTranslation4 = - (1413 * 8.28) + ( (828 - realHeight));
   document.querySelector('.catalog4 img').style.transform = 'translate(0%, ' + newVerticalTranslation4 + 'px)';
   
 
