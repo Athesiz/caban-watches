@@ -1,4 +1,27 @@
 
+document.addEventListener('DOMContentLoaded', function () {
+  const tagol = document.querySelector('.tagol');
+  const imgpc = document.querySelector('.imgpc');
+  const imgpc2 = document.querySelector('.imgpc2');
+  const imgpc3 = document.querySelector('.imgpc3');
+  const imgpc4 = document.querySelector('.imgpc4');
+  const imgpc5 = document.querySelector('.imgpc5');
+  if (window.innerWidth < 500) {
+    tagol.src = 'Images/caban.mp4';  
+    imgpc.src = 'Images/110500.jpg';    
+    imgpc2.src = 'Images/28250.PNG';
+    imgpc3.src = 'Images/110300.jpg';
+    imgpc4.src = 'Images/28250.jpg';
+    imgpc5.src = 'Images/19300(6).jpg'; 
+  } 
+  else {
+    tagol.src = 'Images/caban1.mov'; 
+    imgpc.src = 'Images/f22.jpg'; 
+    imgpc2.src = 'Images/f22.jpg'; 
+    imgpc3.src = 'Images/f22.jpg'; 
+    imgpc4.src = 'Images/f22.jpg'; 
+    imgpc5.src = 'Images/f22.jpg'; 
+  }});
 
 const navbarController = new ScrollMagic.Controller();
 
@@ -19,25 +42,45 @@ const pinNavbarScene = new ScrollMagic.Scene({
   const scrollContainer = document.querySelector('.scroll-container');
   const controller = new ScrollMagic.Controller();
   
-  var browserHeight = window.outerHeight;
+  /*var browserHeight = window.outerHeight;
 var addressBarHeight = browserHeight - window.innerHeight;
-var realHeight = window.innerHeight - addressBarHeight;
-  
-  var newVerticalTranslation = - ((594 * 8.28)+ addressBarHeight) + ( (828 - realHeight));
+var realHeight = window.innerHeight - addressBarHeight;*/
+var realHeight =document.documentElement.clientHeight
+
+document.addEventListener('DOMContentLoaded', function () {
+  if (window.innerHeight > 828 ) {
+  var newVerticalTranslation = - ((588 * 8.28)+ 0) + ( (828 - realHeight));
   document.querySelector('.catalog2 img').style.transform = 'translate(0%, ' + newVerticalTranslation + 'px)';
   
 
-  var newVerticalTranslation2 = - ((1056 * 8.28)+ addressBarHeight) + ( (828 - realHeight));
+  var newVerticalTranslation2 = - ((1054 * 8.28)+ 0) + ( (828 - realHeight));
   document.querySelector('.catalog3 img').style.transform = 'translate(0%, ' + newVerticalTranslation2 + 'px)';
   
   
-  var newVerticalTranslation4 = - ((1396 * 8.28)+ addressBarHeight) + ( (828 - realHeight));
+  var newVerticalTranslation4 = - ((1398 * 8.28)+ 0) + ( (828 - realHeight));
   document.querySelector('.catalog4 img').style.transform = 'translate(0%, ' + newVerticalTranslation4 + 'px)';
   
 
-  var newVerticalTranslation6 = - ((1620 * 8.28)+ addressBarHeight) + (  (828 - realHeight));
+  var newVerticalTranslation6 = - ((1620 * 8.28)+ 0) + (  (828 - realHeight));
   document.querySelector('.catalog5 img').style.transform = 'translate(0%, ' + newVerticalTranslation6 + 'px)';
-   
+  }
+
+  else {
+      var newVerticalTranslation = - ((588 * 8.28)+ 0) - ( (828 - realHeight));
+      document.querySelector('.catalog2 img').style.transform = 'translate(0%, ' + newVerticalTranslation + 'px)';
+      
+    
+      var newVerticalTranslation2 = - ((1054 * 8.28)+ 0) - ( (828 - realHeight));
+      document.querySelector('.catalog3 img').style.transform = 'translate(0%, ' + newVerticalTranslation2 + 'px)';
+      
+      
+      var newVerticalTranslation4 = - ((1398 * 8.28)+ 0) - ( (828 - realHeight));
+      document.querySelector('.catalog4 img').style.transform = 'translate(0%, ' + newVerticalTranslation4 + 'px)';
+      
+    
+      var newVerticalTranslation6 = - ((1620 * 8.28)+ 0) - (  (828 - realHeight));
+      document.querySelector('.catalog5 img').style.transform = 'translate(0%, ' + newVerticalTranslation6 + 'px)';
+  }});
 
 /*
 
@@ -104,29 +147,7 @@ var newVerticalTranslation3 = - 575 * 8.28 + (828 - document.documentElement.cli
           .addTo(controller);
     
    
-  document.addEventListener('DOMContentLoaded', function () {
-    const tagol = document.querySelector('.tagol');
-    const imgpc = document.querySelector('.imgpc');
-    const imgpc2 = document.querySelector('.imgpc2');
-    const imgpc3 = document.querySelector('.imgpc3');
-    const imgpc4 = document.querySelector('.imgpc4');
-    const imgpc5 = document.querySelector('.imgpc5');
-    if (window.innerWidth < 500) {
-      tagol.src = 'Images/caban.mp4';  
-      imgpc.src = 'Images/110500.jpg';    
-      imgpc2.src = 'Images/28250.PNG';
-      imgpc3.src = 'Images/110300.jpg';
-      imgpc4.src = 'Images/28250.jpg';
-      imgpc5.src = 'Images/19300(6).jpg'; 
-    } 
-    else {
-      tagol.src = 'Images/caban1.mov'; 
-      imgpc.src = 'Images/f22.jpg'; 
-      imgpc2.src = 'Images/f22.jpg'; 
-      imgpc3.src = 'Images/f22.jpg'; 
-      imgpc4.src = 'Images/f22.jpg'; 
-      imgpc5.src = 'Images/f22.jpg'; 
-    }});
+  
 
   window.addEventListener('scroll', function () {
       const scrollPosition = window.scrollY;
