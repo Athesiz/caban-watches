@@ -42,107 +42,71 @@ const pinNavbarScene = new ScrollMagic.Scene({
   const scrollContainer = document.querySelector('.scroll-container');
   const controller = new ScrollMagic.Controller();
   
-  /*var browserHeight = window.outerHeight;
-var addressBarHeight = browserHeight - window.innerHeight;
-var realHeight = window.innerHeight - addressBarHeight;*/
-var realHeight =document.documentElement.clientHeight
 
-document.addEventListener('DOMContentLoaded', function () {
-  if (window.innerHeight > 828 ) {
-  var newVerticalTranslation = - ((588 * 8.28)+ 0) + ( (828 - realHeight));
+var realHeight =document.documentElement.clientHeight;
+
+  var newVerticalTranslation = -realHeight * 5;
   document.querySelector('.catalog2 img').style.transform = 'translate(0%, ' + newVerticalTranslation + 'px)';
-  
+  document.querySelector('.lng-tbi').style.transform = 'translate(0%, ' + newVerticalTranslation + 'px)';
 
-  var newVerticalTranslation2 = - ((1054 * 8.28)+ 0) + ( (828 - realHeight));
+  var newVerticalTranslation2 = -realHeight * 9;
   document.querySelector('.catalog3 img').style.transform = 'translate(0%, ' + newVerticalTranslation2 + 'px)';
+  document.querySelector('.lng-4bi').style.transform = 'translate(0%, ' + newVerticalTranslation2 + 'px)';
   
   
-  var newVerticalTranslation4 = - ((1398 * 8.28)+ 0) + ( (828 - realHeight));
+  var newVerticalTranslation4 = -realHeight * 12;
   document.querySelector('.catalog4 img').style.transform = 'translate(0%, ' + newVerticalTranslation4 + 'px)';
-  
+  document.querySelector('.lng-5bi').style.transform = 'translate(0%, ' + newVerticalTranslation4 + 'px)';
 
-  var newVerticalTranslation6 = - ((1620 * 8.28)+ 0) + (  (828 - realHeight));
+  var newVerticalTranslation6 = -realHeight * 14;
   document.querySelector('.catalog5 img').style.transform = 'translate(0%, ' + newVerticalTranslation6 + 'px)';
-  }
-
-  else {
-      var newVerticalTranslation = - ((588 * 8.28)+ 0) - ( (828 - realHeight));
-      document.querySelector('.catalog2 img').style.transform = 'translate(0%, ' + newVerticalTranslation + 'px)';
-      
-    
-      var newVerticalTranslation2 = - ((1054 * 8.28)+ 0) - ( (828 - realHeight));
-      document.querySelector('.catalog3 img').style.transform = 'translate(0%, ' + newVerticalTranslation2 + 'px)';
-      
-      
-      var newVerticalTranslation4 = - ((1398 * 8.28)+ 0) - ( (828 - realHeight));
-      document.querySelector('.catalog4 img').style.transform = 'translate(0%, ' + newVerticalTranslation4 + 'px)';
-      
-    
-      var newVerticalTranslation6 = - ((1620 * 8.28)+ 0) - (  (828 - realHeight));
-      document.querySelector('.catalog5 img').style.transform = 'translate(0%, ' + newVerticalTranslation6 + 'px)';
-  }});
-
-/*
-
-  var newVerticalTranslation1 = 15 * 8.28 +(828 - document.documentElement.clientHeight);
-  document.querySelector('.lng-sbi').style.transform = 'translate(0%, ' + newVerticalTranslation1 + 'px)';
+  document.querySelector('.lng-6bi').style.transform = 'translate(0%, ' + newVerticalTranslation6 + 'px)';
   
-var newVerticalTranslation3 = - 575 * 8.28 + (828 - document.documentElement.clientHeight);
-  document.querySelector('.lng-tbi').style.transform = 'translate(0%, ' + newVerticalTranslation3 + 'px)';
-  
-    var newVerticalTranslation5 = - 1042 * 8.28 + (828 - document.documentElement.clientHeight);
-  document.querySelector('.lng-4bi').style.transform = 'translate(0%, ' + newVerticalTranslation5 + 'px)';
-  
-  
-  var newVerticalTranslation7 = - 1380 * 8.28 + (7 * (828 - document.documentElement.clientHeight));
-  document.querySelector('.lng-5bi').style.transform = 'translate(0%, ' + newVerticalTranslation7 + 'px)';
-  
-  var newVerticalTranslation8 = - 1605 * 8.28 + (6 * (828 - document.documentElement.clientHeight));
-  document.querySelector('.lng-6bi').style.transform = 'translate(0%, ' + newVerticalTranslation8 + 'px)';
-  
-  var newVerticalTranslation9 = - 1130 * 8.28 + (1 * (828 - document.documentElement.clientHeight));
-  document.querySelector('.grid').style.transform = 'translate(0%, ' + newVerticalTranslation9 + 'px)';
-  */
 
 
 
   const catalog1 = document.querySelector(".catalog1");
   let fi = new ScrollMagic.Scene({
-    duration: 4040,
+    duration: realHeight * 4,
     triggerElement: catalog1,
     triggerHook: 0
   })
     .setPin(catalog1)
     .addTo(controller);
 
-  
+   const tbi = document.querySelector(".lng-tbi");
    const catalog2 = document.querySelector(".catalog2");
     let si = new ScrollMagic.Scene({
     
-      duration: 3030,
+      duration: realHeight * 3,
       triggerElement: catalog1,
       triggerHook: 0
     })
+      .setPin(tbi)
       .setPin(catalog2)
       .addTo(controller);
 
+      const fobi = document.querySelector(".lng-4bi"); 
       const catalog3 = document.querySelector(".catalog3");
       let ti = new ScrollMagic.Scene({
       
-        duration: 2020,
+        duration: realHeight * 2,
         triggerElement: catalog1,
         triggerHook: 0
       })
+        .setPin(fobi)
         .setPin(catalog3)
         .addTo(controller);
-
+      
+      const fibi = document.querySelector(".lng-5bi");
       const catalog4 = document.querySelector(".catalog4");
         let foi = new ScrollMagic.Scene({
         
-          duration: 1010,
+          duration: realHeight ,
           triggerElement: catalog1,
           triggerHook: 0
         })
+          .setPin(fibi)
           .setPin(catalog4)
           .addTo(controller);
     
