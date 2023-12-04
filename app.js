@@ -42,60 +42,57 @@ const pinNavbarScene = new ScrollMagic.Scene({
   const scrollContainer = document.querySelector('.scroll-container');
   const controller = new ScrollMagic.Controller();
   
-/*var realHeight = document.documentElement.clientHeight;
-var browserHeight = window.outerHeight;
-var addressBarHeight = browserHeight - window.innerHeight; */
-
+var realHeight = document.documentElement.clientHeight;
 var addressBarHeight = window.innerHeight - document.documentElement.clientHeight;
 
 window.addEventListener('scroll', function () {
   if (window.innerWidth > 500) {
-  var newVerticalTranslation = -((document.documentElement.clientHeight * 5));
+  var newVerticalTranslation = -((realHeight * 5));
   document.querySelector('.catalog2 img').style.transform = 'translate(0%, ' + newVerticalTranslation + 'px)';
   document.querySelector('.lng-tbi').style.transform = 'translate(0%, ' + newVerticalTranslation + 'px)';
 
-  var newVerticalTranslation2 = -((document.documentElement.clientHeight * 9));
+  var newVerticalTranslation2 = -((realHeight * 9));
   document.querySelector('.catalog3 img').style.transform = 'translate(0%, ' + newVerticalTranslation2 + 'px)';
   document.querySelector('.lng-4bi').style.transform = 'translate(0%, ' + newVerticalTranslation2 + 'px)';
   
   
-  var newVerticalTranslation4 = -((document.documentElement.clientHeight * 12));
+  var newVerticalTranslation4 = -((realHeight * 12));
   document.querySelector('.catalog4 img').style.transform = 'translate(0%, ' + newVerticalTranslation4 + 'px)';
   document.querySelector('.lng-5bi').style.transform = 'translate(0%, ' + newVerticalTranslation4 + 'px)';
 
-  var newVerticalTranslation6 = -((document.documentElement.clientHeight * 14));
+  var newVerticalTranslation6 = -((realHeight * 14));
   document.querySelector('.catalog5 img').style.transform = 'translate(0%, ' + newVerticalTranslation6 + 'px)';
   document.querySelector('.lng-6bi').style.transform = 'translate(0%, ' + newVerticalTranslation6 + 'px)';
   
-  var newVerticalTranslation8 = -((document.documentElement.clientHeight * 10));
+  var newVerticalTranslation8 = -((realHeight * 10));
   document.querySelector('.grid').style.transform = 'translate(0%, ' + newVerticalTranslation8 + 'px)';
   } 
   else {
-  var newVerticalTranslation = -((document.documentElement.clientHeight * 5) + addressBarHeight * 1);
+  var newVerticalTranslation = -((realHeight * 5) + addressBarHeight * 5);
   document.querySelector('.catalog2 img').style.transform = 'translate(0%, ' + newVerticalTranslation + 'px)';
   document.querySelector('.lng-tbi').style.transform = 'translate(0%, ' + newVerticalTranslation + 'px)';
 
-  var newVerticalTranslation2 = -((document.documentElement.clientHeight * 9) + addressBarHeight * 2);
+  var newVerticalTranslation2 = -((realHeight * 9) + addressBarHeight * 9);
   document.querySelector('.catalog3 img').style.transform = 'translate(0%, ' + newVerticalTranslation2 + 'px)';
   document.querySelector('.lng-4bi').style.transform = 'translate(0%, ' + newVerticalTranslation2 + 'px)';
   
   
-  var newVerticalTranslation4 = -((document.documentElement.clientHeight * 12) + addressBarHeight * 3);
+  var newVerticalTranslation4 = -((realHeight * 12) + addressBarHeight * 12);
   document.querySelector('.catalog4 img').style.transform = 'translate(0%, ' + newVerticalTranslation4 + 'px)';
   document.querySelector('.lng-5bi').style.transform = 'translate(0%, ' + newVerticalTranslation4 + 'px)';
 
-  var newVerticalTranslation6 = -((document.documentElement.clientHeight * 14) + addressBarHeight * 4);
+  var newVerticalTranslation6 = -((realHeight * 14) + addressBarHeight * 14);
   document.querySelector('.catalog5 img').style.transform = 'translate(0%, ' + newVerticalTranslation6 + 'px)';
   document.querySelector('.lng-6bi').style.transform = 'translate(0%, ' + newVerticalTranslation6 + 'px)';
   
-  var newVerticalTranslation8 = -((document.documentElement.clientHeight * 10) + addressBarHeight);
+  var newVerticalTranslation8 = -((realHeight * 10) + addressBarHeight);
   document.querySelector('.grid').style.transform = 'translate(0%, ' + newVerticalTranslation8 + 'px)';
   }});
   
 
   const catalog1 = document.querySelector(".catalog1");
   let fi = new ScrollMagic.Scene({
-    duration: document.documentElement.clientHeight * 4,
+    duration: realHeight * 4,
     triggerElement: catalog1,
     triggerHook: 0
   })
@@ -106,7 +103,7 @@ window.addEventListener('scroll', function () {
    const catalog2 = document.querySelector(".catalog2");
     let si = new ScrollMagic.Scene({
     
-      duration: document.documentElement.clientHeight * 3,
+      duration: realHeight * 3,
       triggerElement: catalog1,
       triggerHook: 0
     })
@@ -118,7 +115,7 @@ window.addEventListener('scroll', function () {
       const catalog3 = document.querySelector(".catalog3");
       let ti = new ScrollMagic.Scene({
       
-        duration: document.documentElement.clientHeight * 2,
+        duration: realHeight * 2,
         triggerElement: catalog1,
         triggerHook: 0
       })
@@ -130,7 +127,7 @@ window.addEventListener('scroll', function () {
       const catalog4 = document.querySelector(".catalog4");
         let foi = new ScrollMagic.Scene({
         
-          duration: document.documentElement.clientHeight ,
+          duration: realHeight ,
           triggerElement: catalog1,
           triggerHook: 0
         })
@@ -246,4 +243,5 @@ window.addEventListener("scroll", function () {
   // Rotate the watch hand
   document.querySelector(".hand").style.transform = `rotate(${rotation}deg)`;
 });
+
 
