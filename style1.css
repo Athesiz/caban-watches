@@ -96,6 +96,7 @@ button {
   top: 0;
   left: 0;
   object-fit: cover;
+  z-index: 10;
 }
 
 
@@ -105,7 +106,7 @@ button {
   top: 30%;
   font-size: 60px;
   color: rgb(255, 255, 255);
-  z-index: 10;
+  z-index: 15;
 }
 
 .lng-fbi {
@@ -118,7 +119,7 @@ button {
   border: 1px solid #fffdfd;
   color: #fafafa;
   cursor: pointer;
-  z-index: 10;
+  z-index: 15;
 }
 
 
@@ -131,6 +132,7 @@ button {
     align-items: center;
     justify-content: flex-start;
     overflow: visible;
+    z-index: 13;
 }
 
 .rectangle {
@@ -170,18 +172,20 @@ button {
 
 .catalog1 {
   height: 100vh; 
-    transform: translateY(0);
-    transition: transform 0s ease;
-    color: transparent;
-  }
-  
+  transform: translateY(0);
+  transition: transform 0s ease;
+  color: transparent;
+}
+
 .catalog1 img {
   height: 100%;
   width: 100%;
   object-fit: cover;
   transform-origin: top left;
-  z-index: +0;
+
 }
+
+
 
 .lng-sbi {
   position: absolute;
@@ -190,10 +194,10 @@ button {
   padding: 10px 20px;
   font-size: 40px;
   background-color: transparent;
-  border: 1px solid #fffdfd;
+  border: 1px solid #ffffff;
   color: #fafafa;
   cursor: pointer;
-  z-index: +0;
+  z-index: +20;
 }
 
 
@@ -220,10 +224,10 @@ button {
   padding: 10px 20px;
   font-size: 40px;
   background-color: transparent;
-  border: 1px solid #fffdfd;
+  border: 1px solid #ffffff;
   color: #fafafa;
   cursor: pointer;
-  z-index: +1;
+  z-index: +20;
 }
 
 
@@ -362,35 +366,35 @@ button {
   }
 
   .catalog1 img {
-    height: 110%;
+    height: 100%;
     width: 100%;
     object-fit: cover;
     transform-origin: top left;
     z-index: +0;
   }
   .catalog2 img {
-    height: 110%;
+    height: 100%;
     width: 100%;
     object-fit: cover;
     transform-origin: top left;
     z-index: +1;
   }
   .catalog3 img {
-    height: 110%;
+    height: 100%;
     width: 100%;
     object-fit: cover;
     transform-origin: top left;
     z-index: +2;
   }
   .catalog4 img {
-    height: 110%;
+    height: 100%;
     width: 100%;
     object-fit: cover;
     transform-origin: top left;
     z-index: +3;
   }
   .catalog5 img {
-    height: 110%;
+    height: 100%;
     width: 100%;
     object-fit: cover;
     transform-origin: top left;
@@ -761,3 +765,4 @@ li {
     padding: 10px 10px;
   }
 }
+
