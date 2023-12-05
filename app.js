@@ -82,6 +82,18 @@ var addressBarHeight = window.innerHeight - document.documentElement.clientHeigh
   })
     .setPin(catalog1)
     .addTo(controller);
+    
+    const catalog5Img = document.querySelector('.catalog4 img');
+    const blur5Animation = TweenMax.fromTo(catalog5Img, 3, { filter: 'blur(12px)' }, { filter: 'blur(0px)' });
+   
+    let scene01 = new ScrollMagic.Scene({
+      duration: realHeight * 1,
+      triggerElement: catalog1,
+      triggerHook: 0
+    })
+    .setTween(blur5Animation)
+    .addTo(controller);
+
 
    const tbi = document.querySelector(".lng-tbi");
    const catalog2 = document.querySelector(".catalog2");
@@ -95,6 +107,17 @@ var addressBarHeight = window.innerHeight - document.documentElement.clientHeigh
       .setPin(catalog2)
       .addTo(controller);
 
+      const catalog4Img = document.querySelector('.catalog3 img');
+        const blur4Animation = TweenMax.fromTo(catalog4Img, 3, { filter: 'blur(24px)' }, { filter: 'blur(0px)' });
+       
+        let scene00 = new ScrollMagic.Scene({
+          duration: realHeight * 2,
+          triggerElement: catalog1,
+          triggerHook: 0
+        })
+        .setTween(blur4Animation)
+        .addTo(controller);
+
       const fobi = document.querySelector(".lng-4bi"); 
       const catalog3 = document.querySelector(".catalog3");
       let ti = new ScrollMagic.Scene({
@@ -106,7 +129,19 @@ var addressBarHeight = window.innerHeight - document.documentElement.clientHeigh
         .setPin(fobi)
         .setPin(catalog3)
         .addTo(controller);
-      
+
+        const catalog3Img = document.querySelector('.catalog2 img');
+        const blur3Animation = TweenMax.fromTo(catalog3Img, 3, { filter: 'blur(58px)' }, { filter: 'blur(0px)' });
+       
+        let scene0 = new ScrollMagic.Scene({
+          duration: realHeight * 3,
+          triggerElement: catalog1,
+          triggerHook: 0
+        })
+        .setTween(blur3Animation)
+        .addTo(controller);
+
+
       const fibi = document.querySelector(".lng-5bi");
       const catalog4 = document.querySelector(".catalog4");
         let foi = new ScrollMagic.Scene({
@@ -118,9 +153,20 @@ var addressBarHeight = window.innerHeight - document.documentElement.clientHeigh
           .setPin(fibi)
           .setPin(catalog4)
           .addTo(controller);
-    
-   
-  
+
+          const catalog23Img = document.querySelector('.catalog1 img');
+          const blur23Animation = TweenMax.fromTo(catalog23Img, 3, { filter: 'blur(48px)' }, { filter: 'blur(0px)' });
+         
+          let scene03 = new ScrollMagic.Scene({
+            duration: realHeight * 3,
+            triggerElement: catalog1,
+            triggerHook: 0
+          })
+          .setTween(blur23Animation)
+          .addTo(controller);
+
+
+            
   window.addEventListener('scroll', function () {
       const scrollPosition = window.scrollY;
       let leftTranslate, centerTranslate, rightTranslate;
@@ -147,8 +193,6 @@ var addressBarHeight = window.innerHeight - document.documentElement.clientHeigh
       scrollContainer.style.transform = leftTranslate; // Apply transformation to the container for fixed left and center rectangles
   });
   
-
-
 
 
 
