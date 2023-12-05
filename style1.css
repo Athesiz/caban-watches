@@ -171,14 +171,14 @@ button {
 
 
 .catalog1 {
-  height: 100vh; 
+  height: 1px; 
   transform: translateY(0);
   transition: transform 0s ease;
   color: transparent;
 }
 
 .catalog1 img {
-  height: 100%;
+  height: 100vh;
   width: 100%;
   object-fit: cover;
   transform-origin: top left;
@@ -203,14 +203,14 @@ button {
 
 
 .catalog2 {
-  height: 100vh; 
+  height: 1px; 
   transform: translateY(0);
   transition: transform 0s ease;
   color: transparent;
   }
   
 .catalog2 img {
-  height: 100%;
+  height: 100vh;
   width: 100%;
   object-fit: cover;
   transform-origin: top left;
@@ -232,13 +232,13 @@ button {
 
 
 .catalog3 {
-  height: 100vh; 
+  height: 1px; 
   transform: translateY(0);
   transition: transform 0s ease;
   }
   
 .catalog3 img {
-  height: 100%;
+  height: 100vh;
   width: 100%;
   object-fit: cover;
   transform-origin: top left;
@@ -261,13 +261,13 @@ button {
 
 
 .catalog4 {
-  height: 100vh; 
+  height: 1px; 
   transform: translateY(0);
   transition: transform 0s ease;
   }
  
 .catalog4 img {
-  height: 100%;
+  height: 100vh;
   width: 100%;
   object-fit: cover;
   transform-origin: top left;
@@ -289,13 +289,13 @@ button {
 
 
 .catalog5 {
-  height: 100vh; 
+  height: 1px; 
     transform: translateY(0);
     transition: transform 0s ease;
   }
   
 .catalog5 img {
-  height: 100%;
+  height: 100vh;
   width: 100%;
   object-fit: cover;
   transform-origin: top left;
@@ -366,35 +366,35 @@ button {
   }
 
   .catalog1 img {
-    height: 100%;
+    height: 100vh;
     width: 100%;
     object-fit: cover;
     transform-origin: top left;
     z-index: +0;
   }
   .catalog2 img {
-    height: 100%;
+    height: 100vh;
     width: 100%;
     object-fit: cover;
     transform-origin: top left;
     z-index: +1;
   }
   .catalog3 img {
-    height: 100%;
+    height: 100vh;
     width: 100%;
     object-fit: cover;
     transform-origin: top left;
     z-index: +2;
   }
   .catalog4 img {
-    height: 100%;
+    height: 100vh;
     width: 100%;
     object-fit: cover;
     transform-origin: top left;
     z-index: +3;
   }
   .catalog5 img {
-    height: 100%;
+    height: 100vh;
     width: 100%;
     object-fit: cover;
     transform-origin: top left;
@@ -765,4 +765,3 @@ li {
     padding: 10px 10px;
   }
 }
-
