@@ -46,25 +46,30 @@ var realHeight = document.documentElement.clientHeight;
 var addressBarHeight = window.innerHeight - document.documentElement.clientHeight;
 
 window.addEventListener('scroll', function () {
-  if (window.innerWidth > 500) {
-  var newVerticalTranslation = -((realHeight * 5));
+  if (window.innerWidth > 5) {
+    var newVerticalTranslation = 0;
+    document.querySelector('.catalog1 img').style.transform = 'translate(0%, ' + newVerticalTranslation + 'px)';
+    document.querySelector('.lng-sbi').style.transform = 'translate(0%, ' + newVerticalTranslation + 'px)';
+
+  var newVerticalTranslation = -realHeight*4;
   document.querySelector('.catalog2 img').style.transform = 'translate(0%, ' + newVerticalTranslation + 'px)';
   document.querySelector('.lng-tbi').style.transform = 'translate(0%, ' + newVerticalTranslation + 'px)';
 
-  var newVerticalTranslation2 = -((realHeight * 9));
+  var newVerticalTranslation2 = -realHeight*7;
   document.querySelector('.catalog3 img').style.transform = 'translate(0%, ' + newVerticalTranslation2 + 'px)';
   document.querySelector('.lng-4bi').style.transform = 'translate(0%, ' + newVerticalTranslation2 + 'px)';
   
   
-  var newVerticalTranslation4 = -((realHeight * 12));
+  var newVerticalTranslation4 = -realHeight*9;
   document.querySelector('.catalog4 img').style.transform = 'translate(0%, ' + newVerticalTranslation4 + 'px)';
   document.querySelector('.lng-5bi').style.transform = 'translate(0%, ' + newVerticalTranslation4 + 'px)';
 
-  var newVerticalTranslation6 = -((realHeight * 14));
-  document.querySelector('.catalog5 img').style.transform = 'translate(0%, ' + newVerticalTranslation6 + 'px)';
-  document.querySelector('.lng-6bi').style.transform = 'translate(0%, ' + newVerticalTranslation6 + 'px)';
+  var newVerticalTranslation4 = -realHeight*10;
+  document.querySelector('.catalog5 img').style.transform = 'translate(0%, ' + newVerticalTranslation4 + 'px)';
+  document.querySelector('.lng-6bi').style.transform = 'translate(0%, ' + newVerticalTranslation4 + 'px)';
+
   
-  var newVerticalTranslation8 = -((realHeight * 10));
+  var newVerticalTranslation8 = -(realHeight * 11);
   document.querySelector('.grid').style.transform = 'translate(0%, ' + newVerticalTranslation8 + 'px)';
   } 
   else {
@@ -87,7 +92,8 @@ window.addEventListener('scroll', function () {
   
   var newVerticalTranslation8 = -(realHeight * 10);
   document.querySelector('.grid').style.transform = 'translate(0%, ' + newVerticalTranslation8 + 'px)';
-  }});
+  }});/**/
+
   
 
   const catalog1 = document.querySelector(".catalog1");
@@ -137,7 +143,6 @@ window.addEventListener('scroll', function () {
     
    
   
-
   window.addEventListener('scroll', function () {
       const scrollPosition = window.scrollY;
       let leftTranslate, centerTranslate, rightTranslate;
