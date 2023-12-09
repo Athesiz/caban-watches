@@ -1,0 +1,299 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100vw;
+  font-family: Helvetica;
+  background-color: rgba(225, 132, 132, 0);
+
+}
+
+
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #00000027;
+  padding: 10px 0;
+}
+.navbar-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+.navbar-list li {   
+  display: inline;
+  margin-right: 20px;
+
+}
+
+
+.lng-main:hover {
+  background-color: #02020275;
+}
+.lng-main {       /*acribis*/
+  display: inline-block;
+  margin-left: 40px;
+  padding: 0px 0px;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  background-color: hsla(0, 0%, 100%, 0);
+  border: none;
+  border-radius: 1px;
+  cursor: pointer;
+  font-size: 18px;
+}
+.lng-main:hover {
+  background-color: #02020275;
+}
+input, select, textarea {
+  background: none;
+  border: 1px solid rgba(255, 255, 255, 0);
+  padding: 10px 20px;
+  font-size: .9rem;
+  outline: none;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+  color: blue;
+}
+
+
+
+
+.unit1 {
+  position: absolute;
+  left: 10%;
+  top: 35%;
+  font-size: 60px;
+  color: rgb(255, 255, 255);
+  z-index: 1;
+}
+
+.unit2 {
+position: absolute;
+top: 30%;
+font-size: 60px;
+color: rgb(255, 255, 255);
+z-index: 1;
+@media (min-width: 500px) {
+  left: 10vw;
+  }
+
+}
+
+.unit3 {
+position: absolute;
+left: 65%;
+top: 35%;
+font-size: 23px;
+color: rgb(255, 255, 255);
+z-index: 1;
+}
+
+
+.intro {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  z-index: 0; /* Set a neutral z-index value */
+}
+
+.intro .o {
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  z-index: -1; 
+}
+.rectangl {
+  width: 100;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.903);
+  z-index: -10;
+}
+
+.fblock {
+  height: auto;
+  background-color: #ffffff;
+  z-index: 10;
+}
+
+.fblock img {
+  top: 10vh; 
+ width: 100vw;
+ z-index: 100;
+}
+
+
+
+.green, .blue, .red {
+  width: 40px;
+  height: 40px;
+  border-radius: 60%; 
+  line-height: 100px;
+  cursor: pointer;
+  margin: 10px;
+  border: 1px solid #000; /* Add a thin black border to all circle buttons */
+  display: inline-block; /* Display elements as inline-block to align them horizontally */
+}
+.colors{
+  text-align: center;
+}
+
+.fbt {
+  text-align: center;
+  width: 60vw;
+  word-wrap: break-word;
+  text-align: center;
+  @media (min-width: 500px) {
+  margin-left: 20vw;
+  }
+}
+
+.tk {
+  height: auto;
+  width: 100vw;
+  background-color: #ffffff;
+  text-align: center;
+  z-index: +10;
+}
+
+.tki {
+width: 60vw;
+text-align: center;
+}
+
+
+.sbt {
+  margin-top: 3vh;
+  margin-bottom: 3vh;
+  text-align: center;
+ 
+}
+
+.ssbt {
+  margin-top: 3vh;
+  width: 60vw;
+  word-wrap: break-word;
+  text-align: center;
+  margin-left: 20vw;
+  }
+
+.lhv {
+  @media (min-width: 500px) {
+    height: 100vh;
+    }
+    margin-top: 10vh;
+}
+.dv{
+  margin-top: 3vh;
+  width: 60vw;
+  word-wrap: break-word;
+  text-align: center;
+  margin-left: 20vw;
+}
+.dvi {
+  width: 100vw;
+}
+
+.dovga{
+  height: auto;
+  text-align: center;
+}
+.dovgali{
+  width: 100vw;
+  margin-top: 10vh;
+}
+.dov {
+  margin-top: 3vh;
+}
+
+
+
+.basement {
+  text-align: center;
+  height: 40vh;
+  background-color: #252525;
+  margin-top: 40vh;
+
+}
+.fotter-text {
+top: 10vh;
+ font-size: 50px;
+ color: white;
+}
+
+li {
+  list-style-type: none; /* Removes bullet points */
+  margin-top: 2vh;
+}
+
+.lng-about, .lng-privacy, .lng-conditions, .lng-delivery {
+  color: #ffffff;
+  font-size: 20px;
+}
+
+
+@media (max-width: 500px) {
+  .unit2 {
+    position: absolute;
+    top: 30%;
+    width: 100vw;
+    word-wrap: break-word;
+    font-size: 60px;
+    color: rgb(255, 255, 255);
+    z-index: 1;
+    }
+  .unit3 {
+    position: absolute;
+    left: 10%;
+    top: 45%;
+    font-size: 23px;
+    color: rgb(255, 255, 255);
+    width: 90vw;
+    word-wrap: break-word;
+    z-index: 1;
+    }
+    .rectangl {
+      width: 100;
+      height: 100vh;
+      background-color: rgba(0, 0, 0, 0.903);
+      z-index: -10;
+    }
+    .fbt {
+      text-align: center;
+      width: 100vw;
+      word-wrap: break-word;
+      text-align: center;
+    }
+    .tki {
+      width: 100vw;
+      
+    }
+      .tk {
+        width: 100vw;
+        background-color: #ffffff;
+        text-align: center;
+        z-index: +10;
+      }
+      .lhv {
+        height: auto;
+      }
+     
+}
