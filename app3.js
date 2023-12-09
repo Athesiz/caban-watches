@@ -163,7 +163,8 @@ let scene2 = new ScrollMagic.Scene({
               let scene11 = new ScrollMagic.Scene({
                 duration: realHeight * 0.5,
                 triggerElement: tk,
-                triggerHook: 0
+                triggerHook: 0, 
+                offset: 300 
               })
               .setTween(ssbtAnimation)
               .addTo(controller);
@@ -183,7 +184,8 @@ let scene2 = new ScrollMagic.Scene({
               let scene13 = new ScrollMagic.Scene({
                 duration: realHeight * 0.2,
                 triggerElement: lhv,
-                triggerHook: 0
+                triggerHook: 0,
+                offset: 70
               })
               .setTween(dvAnimation)
               .addTo(controller);
@@ -197,15 +199,16 @@ let scene2 = new ScrollMagic.Scene({
               divElementdovga.style.top = distanceFromTop + 'px';
 
 
-
+              const dovga = document.querySelector('.dovga');
               const dov = document.querySelector('.dov');
               
                   const dovAnimation = TweenMax.fromTo(dov, 1, { marginTop: '15vh', opacity: 0 }, { marginTop: '5vh', opacity: 1 });
         
                   let scene61 = new ScrollMagic.Scene({
                     duration: realHeight * 0.5,
-                    triggerElement: lhv,
-                    triggerHook: 0
+                    triggerElement: dovga,
+                    triggerHook: 0,
+                    offset: 70
                   })
                   .setTween(dovAnimation)
                   .addTo(controller);
